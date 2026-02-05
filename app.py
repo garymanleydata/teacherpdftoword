@@ -63,12 +63,12 @@ with col1:
     )
 
 with col2:
-    # Font Size (Default set to 16 for better readability of cursive)
+    # Font Size (Default set to 11 for better readability of cursive)
     font_size = st.number_input(
         "Font Size (pt)", 
         min_value=8, 
         max_value=72, 
-        value=16, 
+        value=12, 
         step=1
     )
 
@@ -109,4 +109,5 @@ if uploaded_file is not None:
                     st.info(f"**Note:** Ensure your computer has the font **'{font_option}'** installed to view the file correctly.")
                     
                 except Exception as e:
+
                     st.error(f"An error occurred: {e}")
